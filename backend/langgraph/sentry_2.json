@@ -1,0 +1,953 @@
+{
+    "action": "triggered",
+    "installation": {
+      "uuid": "4df3c028-c29f-43df-bdf3-e4717fc30759"
+    },
+    "data": {
+      "event": {
+        "event_id": "c38a7dc778b04bf28cbfd90ba69316ca",
+        "project": 4509752919851088,
+        "release": null,
+        "dist": null,
+        "platform": "javascript",
+        "message": "",
+        "datetime": "2025-08-06T19:10:39.591000Z",
+        "tags": [
+          [
+            "browser",
+            "Chrome Mobile 138.0.0"
+          ],
+          [
+            "browser.name",
+            "Chrome Mobile"
+          ],
+          [
+            "device",
+            "Nexus 5"
+          ],
+          [
+            "device.family",
+            "Nexus 5"
+          ],
+          [
+            "environment",
+            "production"
+          ],
+          [
+            "handled",
+            "no"
+          ],
+          [
+            "level",
+            "error"
+          ],
+          [
+            "mechanism",
+            "onerror"
+          ],
+          [
+            "os",
+            "Android 6.0"
+          ],
+          [
+            "os.name",
+            "Android"
+          ],
+          [
+            "user",
+            "ip:80.103.180.194"
+          ],
+          [
+            "url",
+            "http://localhost:5173/"
+          ]
+        ],
+        "_dsc": {
+          "environment": "production",
+          "org_id": "4509752918540288",
+          "public_key": "bc7acf8bf6c9695be588c2c31bfa3a6c",
+          "release": null,
+          "replay_id": null,
+          "trace_id": "163bdfd5b9b348d89ddb6bd76b5d1531",
+          "transaction": null
+        },
+        "_metrics": {
+          "bytes.ingested.event": 4458,
+          "bytes.stored.event": 17319
+        },
+        "_ref": 4509752919851088,
+        "_ref_version": 2,
+        "contexts": {
+          "browser": {
+            "browser": "Chrome Mobile 138.0.0",
+            "name": "Chrome Mobile",
+            "version": "138.0.0",
+            "type": "browser"
+          },
+          "device": {
+            "name": "Nexus 5",
+            "family": "Nexus 5",
+            "model": "Nexus 5",
+            "brand": "LG",
+            "type": "device"
+          },
+          "os": {
+            "os": "Android 6.0",
+            "name": "Android",
+            "version": "6.0",
+            "type": "os"
+          },
+          "react": {
+            "type": "react",
+            "version": "19.1.1"
+          },
+          "trace": {
+            "trace_id": "163bdfd5b9b348d89ddb6bd76b5d1531",
+            "span_id": "b995bb717bf20d75",
+            "status": "unknown",
+            "type": "trace"
+          }
+        },
+        "culprit": "ErrorButton(src/components/ErrorButton)",
+        "environment": "production",
+        "errors": [
+          {
+            "type": "js_no_source",
+            "symbolicator_type": "missing_source",
+            "url": "http://localhost:5173/src/components/ErrorButton.jsx?t=1754507348360"
+          }
+        ],
+        "exception": {
+          "values": [
+            {
+              "type": "TypeError",
+              "value": "num.toUpperCase is not a function",
+              "stacktrace": {
+                "frames": [
+                  {
+                    "function": "MessagePort.performWorkUntilDeadline",
+                    "module": "deps/react-dom_client",
+                    "filename": "/node_modules/.vite/deps/react-dom_client.js",
+                    "abs_path": "http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5dac8470",
+                    "lineno": 36,
+                    "colno": 50,
+                    "in_app": false,
+                    "data": {
+                      "symbolicated": false,
+                      "client_in_app": false
+                    },
+                    "context_line": null,
+                    "errors": null,
+                    "raw_function": null,
+                    "image_addr": null,
+                    "instruction_addr": null,
+                    "addr_mode": null,
+                    "package": null,
+                    "platform": null,
+                    "post_context": null,
+                    "pre_context": null,
+                    "source_link": null,
+                    "symbol": null,
+                    "symbol_addr": null,
+                    "trust": null,
+                    "vars": null,
+                    "lock": null
+                  },
+                  {
+                    "function": "performWorkOnRootViaSchedulerTask",
+                    "module": "deps/react-dom_client",
+                    "filename": "/node_modules/.vite/deps/react-dom_client.js",
+                    "abs_path": "http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5dac8470",
+                    "lineno": 11623,
+                    "colno": 9,
+                    "in_app": false,
+                    "data": {
+                      "symbolicated": false,
+                      "client_in_app": false
+                    },
+                    "context_line": null,
+                    "errors": null,
+                    "raw_function": null,
+                    "image_addr": null,
+                    "instruction_addr": null,
+                    "addr_mode": null,
+                    "package": null,
+                    "platform": null,
+                    "post_context": null,
+                    "pre_context": null,
+                    "source_link": null,
+                    "symbol": null,
+                    "symbol_addr": null,
+                    "trust": null,
+                    "vars": null,
+                    "lock": null
+                  },
+                  {
+                    "function": "performWorkOnRoot",
+                    "module": "deps/react-dom_client",
+                    "filename": "/node_modules/.vite/deps/react-dom_client.js",
+                    "abs_path": "http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5dac8470",
+                    "lineno": 10359,
+                    "colno": 46,
+                    "in_app": false,
+                    "data": {
+                      "symbolicated": false,
+                      "client_in_app": false
+                    },
+                    "context_line": null,
+                    "errors": null,
+                    "raw_function": null,
+                    "image_addr": null,
+                    "instruction_addr": null,
+                    "addr_mode": null,
+                    "package": null,
+                    "platform": null,
+                    "post_context": null,
+                    "pre_context": null,
+                    "source_link": null,
+                    "symbol": null,
+                    "symbol_addr": null,
+                    "trust": null,
+                    "vars": null,
+                    "lock": null
+                  },
+                  {
+                    "function": "renderRootSync",
+                    "module": "deps/react-dom_client",
+                    "filename": "/node_modules/.vite/deps/react-dom_client.js",
+                    "abs_path": "http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5dac8470",
+                    "lineno": 10711,
+                    "colno": 13,
+                    "in_app": false,
+                    "data": {
+                      "symbolicated": false,
+                      "client_in_app": false
+                    },
+                    "context_line": null,
+                    "errors": null,
+                    "raw_function": null,
+                    "image_addr": null,
+                    "instruction_addr": null,
+                    "addr_mode": null,
+                    "package": null,
+                    "platform": null,
+                    "post_context": null,
+                    "pre_context": null,
+                    "source_link": null,
+                    "symbol": null,
+                    "symbol_addr": null,
+                    "trust": null,
+                    "vars": null,
+                    "lock": null
+                  },
+                  {
+                    "function": "workLoopSync",
+                    "module": "deps/react-dom_client",
+                    "filename": "/node_modules/.vite/deps/react-dom_client.js",
+                    "abs_path": "http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5dac8470",
+                    "lineno": 10728,
+                    "colno": 43,
+                    "in_app": false,
+                    "data": {
+                      "symbolicated": false,
+                      "client_in_app": false
+                    },
+                    "context_line": null,
+                    "errors": null,
+                    "raw_function": null,
+                    "image_addr": null,
+                    "instruction_addr": null,
+                    "addr_mode": null,
+                    "package": null,
+                    "platform": null,
+                    "post_context": null,
+                    "pre_context": null,
+                    "source_link": null,
+                    "symbol": null,
+                    "symbol_addr": null,
+                    "trust": null,
+                    "vars": null,
+                    "lock": null
+                  },
+                  {
+                    "function": "performUnitOfWork",
+                    "module": "deps/react-dom_client",
+                    "filename": "/node_modules/.vite/deps/react-dom_client.js",
+                    "abs_path": "http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5dac8470",
+                    "lineno": 10868,
+                    "colno": 98,
+                    "in_app": false,
+                    "data": {
+                      "symbolicated": false,
+                      "client_in_app": false
+                    },
+                    "context_line": null,
+                    "errors": null,
+                    "raw_function": null,
+                    "image_addr": null,
+                    "instruction_addr": null,
+                    "addr_mode": null,
+                    "package": null,
+                    "platform": null,
+                    "post_context": null,
+                    "pre_context": null,
+                    "source_link": null,
+                    "symbol": null,
+                    "symbol_addr": null,
+                    "trust": null,
+                    "vars": null,
+                    "lock": null
+                  },
+                  {
+                    "function": "runWithFiberInDEV",
+                    "module": "deps/react-dom_client",
+                    "filename": "/node_modules/.vite/deps/react-dom_client.js",
+                    "abs_path": "http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5dac8470",
+                    "lineno": 1485,
+                    "colno": 72,
+                    "in_app": false,
+                    "data": {
+                      "symbolicated": false,
+                      "client_in_app": false
+                    },
+                    "context_line": null,
+                    "errors": null,
+                    "raw_function": null,
+                    "image_addr": null,
+                    "instruction_addr": null,
+                    "addr_mode": null,
+                    "package": null,
+                    "platform": null,
+                    "post_context": null,
+                    "pre_context": null,
+                    "source_link": null,
+                    "symbol": null,
+                    "symbol_addr": null,
+                    "trust": null,
+                    "vars": null,
+                    "lock": null
+                  },
+                  {
+                    "function": "beginWork",
+                    "module": "deps/react-dom_client",
+                    "filename": "/node_modules/.vite/deps/react-dom_client.js",
+                    "abs_path": "http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5dac8470",
+                    "lineno": 7654,
+                    "colno": 20,
+                    "in_app": false,
+                    "data": {
+                      "symbolicated": false,
+                      "client_in_app": false
+                    },
+                    "context_line": null,
+                    "errors": null,
+                    "raw_function": null,
+                    "image_addr": null,
+                    "instruction_addr": null,
+                    "addr_mode": null,
+                    "package": null,
+                    "platform": null,
+                    "post_context": null,
+                    "pre_context": null,
+                    "source_link": null,
+                    "symbol": null,
+                    "symbol_addr": null,
+                    "trust": null,
+                    "vars": null,
+                    "lock": null
+                  },
+                  {
+                    "function": "updateFunctionComponent",
+                    "module": "deps/react-dom_client",
+                    "filename": "/node_modules/.vite/deps/react-dom_client.js",
+                    "abs_path": "http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5dac8470",
+                    "lineno": 6619,
+                    "colno": 21,
+                    "in_app": false,
+                    "data": {
+                      "symbolicated": false,
+                      "client_in_app": false
+                    },
+                    "context_line": null,
+                    "errors": null,
+                    "raw_function": null,
+                    "image_addr": null,
+                    "instruction_addr": null,
+                    "addr_mode": null,
+                    "package": null,
+                    "platform": null,
+                    "post_context": null,
+                    "pre_context": null,
+                    "source_link": null,
+                    "symbol": null,
+                    "symbol_addr": null,
+                    "trust": null,
+                    "vars": null,
+                    "lock": null
+                  },
+                  {
+                    "function": "renderWithHooks",
+                    "module": "deps/react-dom_client",
+                    "filename": "/node_modules/.vite/deps/react-dom_client.js",
+                    "abs_path": "http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5dac8470",
+                    "lineno": 4206,
+                    "colno": 24,
+                    "in_app": false,
+                    "data": {
+                      "symbolicated": false,
+                      "client_in_app": false
+                    },
+                    "context_line": null,
+                    "errors": null,
+                    "raw_function": null,
+                    "image_addr": null,
+                    "instruction_addr": null,
+                    "addr_mode": null,
+                    "package": null,
+                    "platform": null,
+                    "post_context": null,
+                    "pre_context": null,
+                    "source_link": null,
+                    "symbol": null,
+                    "symbol_addr": null,
+                    "trust": null,
+                    "vars": null,
+                    "lock": null
+                  },
+                  {
+                    "function": "Object.react_stack_bottom_frame",
+                    "module": "deps/react-dom_client",
+                    "filename": "/node_modules/.vite/deps/react-dom_client.js",
+                    "abs_path": "http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5dac8470",
+                    "lineno": 17424,
+                    "colno": 20,
+                    "in_app": false,
+                    "data": {
+                      "symbolicated": false,
+                      "client_in_app": false
+                    },
+                    "context_line": null,
+                    "errors": null,
+                    "raw_function": null,
+                    "image_addr": null,
+                    "instruction_addr": null,
+                    "addr_mode": null,
+                    "package": null,
+                    "platform": null,
+                    "post_context": null,
+                    "pre_context": null,
+                    "source_link": null,
+                    "symbol": null,
+                    "symbol_addr": null,
+                    "trust": null,
+                    "vars": null,
+                    "lock": null
+                  },
+                  {
+                    "function": "ErrorButton",
+                    "module": "src/components/ErrorButton",
+                    "filename": "/src/components/ErrorButton.jsx",
+                    "abs_path": "http://localhost:5173/src/components/ErrorButton.jsx?t=1754507348360",
+                    "lineno": 23,
+                    "colno": 9,
+                    "in_app": true,
+                    "data": {
+                      "symbolicated": false,
+                      "client_in_app": true
+                    },
+                    "context_line": null,
+                    "errors": null,
+                    "raw_function": null,
+                    "image_addr": null,
+                    "instruction_addr": null,
+                    "addr_mode": null,
+                    "package": null,
+                    "platform": null,
+                    "post_context": null,
+                    "pre_context": null,
+                    "source_link": null,
+                    "symbol": null,
+                    "symbol_addr": null,
+                    "trust": null,
+                    "vars": null,
+                    "lock": null
+                  }
+                ]
+              },
+              "raw_stacktrace": {
+                "frames": [
+                  {
+                    "function": "MessagePort.performWorkUntilDeadline",
+                    "filename": "/node_modules/.vite/deps/react-dom_client.js",
+                    "abs_path": "http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5dac8470",
+                    "lineno": 36,
+                    "colno": 50,
+                    "in_app": false,
+                    "context_line": null,
+                    "data": {
+                      "client_in_app": true,
+                      "orig_in_app": 1
+                    },
+                    "errors": null,
+                    "raw_function": null,
+                    "image_addr": null,
+                    "instruction_addr": null,
+                    "addr_mode": null,
+                    "module": null,
+                    "package": null,
+                    "platform": null,
+                    "post_context": null,
+                    "pre_context": null,
+                    "source_link": null,
+                    "symbol": null,
+                    "symbol_addr": null,
+                    "trust": null,
+                    "vars": null,
+                    "lock": null
+                  },
+                  {
+                    "function": "performWorkOnRootViaSchedulerTask",
+                    "filename": "/node_modules/.vite/deps/react-dom_client.js",
+                    "abs_path": "http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5dac8470",
+                    "lineno": 11623,
+                    "colno": 9,
+                    "in_app": false,
+                    "context_line": null,
+                    "data": {
+                      "client_in_app": true,
+                      "orig_in_app": 1
+                    },
+                    "errors": null,
+                    "raw_function": null,
+                    "image_addr": null,
+                    "instruction_addr": null,
+                    "addr_mode": null,
+                    "module": null,
+                    "package": null,
+                    "platform": null,
+                    "post_context": null,
+                    "pre_context": null,
+                    "source_link": null,
+                    "symbol": null,
+                    "symbol_addr": null,
+                    "trust": null,
+                    "vars": null,
+                    "lock": null
+                  },
+                  {
+                    "function": "performWorkOnRoot",
+                    "filename": "/node_modules/.vite/deps/react-dom_client.js",
+                    "abs_path": "http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5dac8470",
+                    "lineno": 10359,
+                    "colno": 46,
+                    "in_app": false,
+                    "context_line": null,
+                    "data": {
+                      "client_in_app": true,
+                      "orig_in_app": 1
+                    },
+                    "errors": null,
+                    "raw_function": null,
+                    "image_addr": null,
+                    "instruction_addr": null,
+                    "addr_mode": null,
+                    "module": null,
+                    "package": null,
+                    "platform": null,
+                    "post_context": null,
+                    "pre_context": null,
+                    "source_link": null,
+                    "symbol": null,
+                    "symbol_addr": null,
+                    "trust": null,
+                    "vars": null,
+                    "lock": null
+                  },
+                  {
+                    "function": "renderRootSync",
+                    "filename": "/node_modules/.vite/deps/react-dom_client.js",
+                    "abs_path": "http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5dac8470",
+                    "lineno": 10711,
+                    "colno": 13,
+                    "in_app": false,
+                    "context_line": null,
+                    "data": {
+                      "client_in_app": true,
+                      "orig_in_app": 1
+                    },
+                    "errors": null,
+                    "raw_function": null,
+                    "image_addr": null,
+                    "instruction_addr": null,
+                    "addr_mode": null,
+                    "module": null,
+                    "package": null,
+                    "platform": null,
+                    "post_context": null,
+                    "pre_context": null,
+                    "source_link": null,
+                    "symbol": null,
+                    "symbol_addr": null,
+                    "trust": null,
+                    "vars": null,
+                    "lock": null
+                  },
+                  {
+                    "function": "workLoopSync",
+                    "filename": "/node_modules/.vite/deps/react-dom_client.js",
+                    "abs_path": "http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5dac8470",
+                    "lineno": 10728,
+                    "colno": 43,
+                    "in_app": false,
+                    "context_line": null,
+                    "data": {
+                      "client_in_app": true,
+                      "orig_in_app": 1
+                    },
+                    "errors": null,
+                    "raw_function": null,
+                    "image_addr": null,
+                    "instruction_addr": null,
+                    "addr_mode": null,
+                    "module": null,
+                    "package": null,
+                    "platform": null,
+                    "post_context": null,
+                    "pre_context": null,
+                    "source_link": null,
+                    "symbol": null,
+                    "symbol_addr": null,
+                    "trust": null,
+                    "vars": null,
+                    "lock": null
+                  },
+                  {
+                    "function": "performUnitOfWork",
+                    "filename": "/node_modules/.vite/deps/react-dom_client.js",
+                    "abs_path": "http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5dac8470",
+                    "lineno": 10868,
+                    "colno": 98,
+                    "in_app": false,
+                    "context_line": null,
+                    "data": {
+                      "client_in_app": true,
+                      "orig_in_app": 1
+                    },
+                    "errors": null,
+                    "raw_function": null,
+                    "image_addr": null,
+                    "instruction_addr": null,
+                    "addr_mode": null,
+                    "module": null,
+                    "package": null,
+                    "platform": null,
+                    "post_context": null,
+                    "pre_context": null,
+                    "source_link": null,
+                    "symbol": null,
+                    "symbol_addr": null,
+                    "trust": null,
+                    "vars": null,
+                    "lock": null
+                  },
+                  {
+                    "function": "runWithFiberInDEV",
+                    "filename": "/node_modules/.vite/deps/react-dom_client.js",
+                    "abs_path": "http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5dac8470",
+                    "lineno": 1485,
+                    "colno": 72,
+                    "in_app": false,
+                    "context_line": null,
+                    "data": {
+                      "client_in_app": true,
+                      "orig_in_app": 1
+                    },
+                    "errors": null,
+                    "raw_function": null,
+                    "image_addr": null,
+                    "instruction_addr": null,
+                    "addr_mode": null,
+                    "module": null,
+                    "package": null,
+                    "platform": null,
+                    "post_context": null,
+                    "pre_context": null,
+                    "source_link": null,
+                    "symbol": null,
+                    "symbol_addr": null,
+                    "trust": null,
+                    "vars": null,
+                    "lock": null
+                  },
+                  {
+                    "function": "beginWork",
+                    "filename": "/node_modules/.vite/deps/react-dom_client.js",
+                    "abs_path": "http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5dac8470",
+                    "lineno": 7654,
+                    "colno": 20,
+                    "in_app": false,
+                    "context_line": null,
+                    "data": {
+                      "client_in_app": true,
+                      "orig_in_app": 1
+                    },
+                    "errors": null,
+                    "raw_function": null,
+                    "image_addr": null,
+                    "instruction_addr": null,
+                    "addr_mode": null,
+                    "module": null,
+                    "package": null,
+                    "platform": null,
+                    "post_context": null,
+                    "pre_context": null,
+                    "source_link": null,
+                    "symbol": null,
+                    "symbol_addr": null,
+                    "trust": null,
+                    "vars": null,
+                    "lock": null
+                  },
+                  {
+                    "function": "updateFunctionComponent",
+                    "filename": "/node_modules/.vite/deps/react-dom_client.js",
+                    "abs_path": "http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5dac8470",
+                    "lineno": 6619,
+                    "colno": 21,
+                    "in_app": false,
+                    "context_line": null,
+                    "data": {
+                      "client_in_app": true,
+                      "orig_in_app": 1
+                    },
+                    "errors": null,
+                    "raw_function": null,
+                    "image_addr": null,
+                    "instruction_addr": null,
+                    "addr_mode": null,
+                    "module": null,
+                    "package": null,
+                    "platform": null,
+                    "post_context": null,
+                    "pre_context": null,
+                    "source_link": null,
+                    "symbol": null,
+                    "symbol_addr": null,
+                    "trust": null,
+                    "vars": null,
+                    "lock": null
+                  },
+                  {
+                    "function": "renderWithHooks",
+                    "filename": "/node_modules/.vite/deps/react-dom_client.js",
+                    "abs_path": "http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5dac8470",
+                    "lineno": 4206,
+                    "colno": 24,
+                    "in_app": false,
+                    "context_line": null,
+                    "data": {
+                      "client_in_app": true,
+                      "orig_in_app": 1
+                    },
+                    "errors": null,
+                    "raw_function": null,
+                    "image_addr": null,
+                    "instruction_addr": null,
+                    "addr_mode": null,
+                    "module": null,
+                    "package": null,
+                    "platform": null,
+                    "post_context": null,
+                    "pre_context": null,
+                    "source_link": null,
+                    "symbol": null,
+                    "symbol_addr": null,
+                    "trust": null,
+                    "vars": null,
+                    "lock": null
+                  },
+                  {
+                    "function": "Object.react_stack_bottom_frame",
+                    "filename": "/node_modules/.vite/deps/react-dom_client.js",
+                    "abs_path": "http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5dac8470",
+                    "lineno": 17424,
+                    "colno": 20,
+                    "in_app": false,
+                    "context_line": null,
+                    "data": {
+                      "client_in_app": true,
+                      "orig_in_app": 1
+                    },
+                    "errors": null,
+                    "raw_function": null,
+                    "image_addr": null,
+                    "instruction_addr": null,
+                    "addr_mode": null,
+                    "module": null,
+                    "package": null,
+                    "platform": null,
+                    "post_context": null,
+                    "pre_context": null,
+                    "source_link": null,
+                    "symbol": null,
+                    "symbol_addr": null,
+                    "trust": null,
+                    "vars": null,
+                    "lock": null
+                  },
+                  {
+                    "function": "ErrorButton",
+                    "filename": "/src/components/ErrorButton.jsx",
+                    "abs_path": "http://localhost:5173/src/components/ErrorButton.jsx?t=1754507348360",
+                    "lineno": 23,
+                    "colno": 9,
+                    "in_app": true,
+                    "context_line": null,
+                    "data": {
+                      "client_in_app": true
+                    },
+                    "errors": null,
+                    "raw_function": null,
+                    "image_addr": null,
+                    "instruction_addr": null,
+                    "addr_mode": null,
+                    "module": null,
+                    "package": null,
+                    "platform": null,
+                    "post_context": null,
+                    "pre_context": null,
+                    "source_link": null,
+                    "symbol": null,
+                    "symbol_addr": null,
+                    "trust": null,
+                    "vars": null,
+                    "lock": null
+                  }
+                ]
+              },
+              "mechanism": {
+                "type": "onerror",
+                "handled": false,
+                "synthetic": null,
+                "description": null,
+                "help_link": null,
+                "data": null,
+                "meta": null,
+                "source": null,
+                "is_exception_group": null,
+                "exception_id": null,
+                "parent_id": null
+              }
+            }
+          ]
+        },
+        "fingerprint": [
+          "{{ default }}"
+        ],
+        "grouping_config": {
+          "id": "newstyle:2023-01-11",
+          "enhancements": "KLUv_SAYwQAAkwORs25ld3N0eWxlOjIwMjMtMDEtMTGQ#KLUv_SAYwQAAkwORs25ld3N0eWxlOjIwMjMtMDEtMTGQ#KLUv_SAYwQAAkwORs25ld3N0eWxlOjIwMjMtMDEtMTGQ"
+        },
+        "hashes": [
+          "9db6ce59b5db6d5aa4a042a460c89dfe",
+          "6603ff0a03f672f8e46010e5ae0c2a1b"
+        ],
+        "ingest_path": [
+          {
+            "version": "25.7.0",
+            "public_key": "7pLPdtCQBMLtodCJ3yOtI9MDBUWfX0k5eDa4ZP4CX6A"
+          }
+        ],
+        "key_id": "281419",
+        "level": "error",
+        "location": "/src/components/ErrorButton.jsx",
+        "logger": "",
+        "metadata": {
+          "value": "num.toUpperCase is not a function",
+          "type": "TypeError",
+          "filename": "/src/components/ErrorButton.jsx",
+          "function": "ErrorButton",
+          "in_app_frame_mix": "mixed"
+        },
+        "nodestore_insert": 1754507445.795484,
+        "received": 1754507441.320401,
+        "request": {
+          "url": "http://localhost:5173/",
+          "headers": [
+            [
+              "User-Agent",
+              "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+            ]
+          ],
+          "query_string": [],
+          "api_target": null,
+          "method": null,
+          "fragment": null,
+          "cookies": null,
+          "data": null,
+          "env": null,
+          "inferred_content_type": null
+        },
+        "scraping_attempts": [
+          {
+            "details": "Can't connect to restricted host localhost",
+            "reason": "invalid_host",
+            "status": "failure",
+            "url": "http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=5dac8470"
+          },
+          {
+            "details": "Can't connect to restricted host localhost",
+            "reason": "invalid_host",
+            "status": "failure",
+            "url": "http://localhost:5173/src/components/ErrorButton.jsx?t=1754507348360"
+          }
+        ],
+        "sdk": {
+          "name": "sentry.javascript.react",
+          "version": "10.1.0",
+          "integrations": [
+            "InboundFilters",
+            "FunctionToString",
+            "BrowserApiErrors",
+            "Breadcrumbs",
+            "GlobalHandlers",
+            "LinkedErrors",
+            "Dedupe",
+            "HttpContext",
+            "BrowserSession"
+          ],
+          "packages": [
+            {
+              "name": "npm:@sentry/react",
+              "version": "10.1.0"
+            }
+          ]
+        },
+        "symbolicated_in_app": false,
+        "timestamp": 1754507439.591,
+        "title": "TypeError: num.toUpperCase is not a function",
+        "type": "error",
+        "user": {
+          "ip_address": "",
+          "sentry_user": "ip:80.103.180.194",
+          "geo": {
+            "country_code": "ES",
+            "city": "Cáceres",
+            "subdivision": "Extremadura",
+            "region": "Spain"
+          }
+        },
+        "version": "7",
+        "url": "https://sentry.io/api/0/projects/footalent-team-2/javascript-react/events/c38a7dc778b04bf28cbfd90ba69316ca/",
+        "web_url": "https://sentry.io/organizations/footalent-team-2/issues/56076521/events/c38a7dc778b04bf28cbfd90ba69316ca/",
+        "issue_url": "https://sentry.io/api/0/organizations/footalent-team-2/issues/56076521/",
+        "issue_id": "56076521"
+      },
+      "triggered_rule": "Integración de prueba"
+    },
+    "actor": {
+      "type": "application",
+      "id": "sentry",
+      "name": "Sentry"
+    }
+  }

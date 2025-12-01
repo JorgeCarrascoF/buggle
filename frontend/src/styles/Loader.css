@@ -1,0 +1,37 @@
+.loader-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.loader-svg {
+    width: 300px;
+    height: 300px;
+}
+
+.loader-path {
+    stroke: #295ba2;
+    fill: #295ba2;
+    stroke-width: 40;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: draw 0.5s ease forwards;
+    animation-iteration-count: infinite;
+    fill-opacity: 0;
+    /* fill empieza casi al final del stroke */
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fillIn {
+    to {
+        fill-opacity: 1;
+    }
+}
